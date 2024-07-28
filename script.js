@@ -38,7 +38,7 @@ addBtn.addEventListener("click", (e) => {
 
 function addNeNote() {
 	if (input.value) {
-    error.classList.add("invisible");
+		error.classList.add("invisible");
 		const newNote = $.createElement("div");
 
 		newNote.innerText = input.value.trim();
@@ -64,4 +64,3 @@ $.body.addEventListener("keydown", (e) => {
 		addNeNote();
 	}
 });
-
