@@ -58,7 +58,7 @@ function addNeNote() {
 	}
 }
 
-$.body.addEventListener("keydown", (e) => {
+input.addEventListener("keydown", (e) => {
 	if (e.key === "Enter" && input.selectionStart === input.value.length) {
 		e.preventDefault();
 		addNeNote();
