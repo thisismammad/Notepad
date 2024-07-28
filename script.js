@@ -37,7 +37,7 @@ addBtn.addEventListener("click", (e) => {
 });
 
 function addNeNote() {
-	if (input.value) {
+	if (input.value.trim()) {
 		error.classList.add("invisible");
 		const newNote = $.createElement("div");
 
