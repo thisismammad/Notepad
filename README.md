@@ -1,1 +1,1 @@
-link: https://thisismammad.github.io/NotePade/
+link: https://thisismammad.github.io/NotePad/
