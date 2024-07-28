@@ -40,7 +40,7 @@ function addNeNote() {
 	if (input.value) {
 		const newNote = $.createElement("div");
 
-		newNote.innerText = input.value;
+		newNote.innerText = input.value.trim();
 		input.value = "";
 		if (getInputBg) {
 			newNote.className = `${getInputBg()} note relative border border-gray-300 p-3 text-justify min-w-32 max-w-72 flex justify-center rounded-md`;
@@ -58,8 +58,9 @@ function addNeNote() {
 }
 
 $.body.addEventListener("keydown", (e) => {
-	if (e.key === "Enter") {
+	if (e.key === "Enter" && input.selectionStart === input.value.length) {
 		e.preventDefault();
 		addNeNote();
 	}
 });
+
